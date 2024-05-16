@@ -11,7 +11,6 @@ for (var i = 0 ; i < elmentLength ; i++ ) {
     })
 }
 
-
 document.addEventListener("keypress",function(event){
     makesound(event.key);
 });
@@ -50,18 +49,12 @@ function makesound(key){
     }
 }
 
-
-
-
-
-
-
 function keyAnimation(currentkey) {
-        // var activeButton = document.querySelector("." + currentKey);
-        // activeButton.classList.add("pressed");
-        // setTimeout(function() {
-        // activeButton.classList.remove("pressed");
-        // }, 100);
+        var activeButton = document.querySelector("." + currentKey);
+        activeButton.classList.add("pressed");
+        setTimeout(function() {
+        activeButton.classList.remove("pressed");
+        }, 100);
 }
 
 // var numberOfDrumButtons = document.querySelectorAll(".drum").length;
